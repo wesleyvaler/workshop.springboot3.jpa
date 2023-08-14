@@ -22,9 +22,9 @@ public class UserResource {
 	private UserService service;
 	
 	@GetMapping
-	public ResponseEntity<List<User>> findAll() {
-		List<User> list = service.findAll();
-		return ResponseEntity.ok().body(list);
+	public ResponseEntity<User> findAll() {
+		User u = new User (1L, "Maria", "maria@gmail.com", "999999", "12345");
+		return ResponseEntity.ok().body(u);
 	}
 
 
