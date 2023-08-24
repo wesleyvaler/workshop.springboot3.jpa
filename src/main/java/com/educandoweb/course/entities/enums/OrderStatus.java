@@ -22,12 +22,9 @@ public enum OrderStatus {
 		for (OrderStatus value : OrderStatus.values()) {
 			if (value.getCode() == code) {
 				return value;
-			}
-			
+			}			
 		}
 	
 		throw new IllegalArgumentException("Invalid OrderStatus code");
-		  
+		  	}
 	}
-	
-}
