@@ -28,7 +28,10 @@ public class Payment implements Serializable {
 	@MapsId
 	private Order order;
 
+<<<<<<< HEAD
 	@JsonIgnore
+=======
+>>>>>>> c3a29ee (feat: bug fixes)
 	public Payment() {
 	}
 
